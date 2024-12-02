@@ -1,0 +1,12 @@
+---
+import { getCollection } from "astro:content";
+const iosAndMac = await getCollection("docs", ({ id }) => {
+  return id.startsWith("Guides/iOS and Mac/");
+});
+---
+
+<ul>
+  {iosAndMac.map((iosAndMacEntry) => (
+    !iosAndMacEntry.data.title.includes("Index") && <li>{iosAndMacEntry.data.title}</li>
+  ))}
+</ul>
