@@ -3,26 +3,27 @@ title: Welcome to HowTo.Technology!
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Your home for technology how-to guides and referenceinformation!
+  tagline: Your home for technology how-to guides and reference information!
   image:
     file: ../../assets/houston.webp
   actions:
     - text: How-to Guides
       link: /guides/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
-      variant: minimal
+    - text: Reference Docs
+      link: /reference
+      icon: right-arrow
 ---
 
 import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## Featured Guides
 
 <CardGrid stagger>
-  <Card title="Update content" icon="pencil">
-    Edit `src/content/docs/index.mdx` to see this page change.
+  <Card title="Hide My Email" icon="email">
+    [Apple's Hide My Email](/guides/ios-and-mac/icloud/hidemyemail/) lets you
+    keep your email address private when signing up to websites and is (sort of)
+    easy to use!
   </Card>
   <Card title="Add new content" icon="add-document">
     Add Markdown or MDX files to `src/content/docs` to create new pages.

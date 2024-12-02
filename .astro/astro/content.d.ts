@@ -152,13 +152,34 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
-"Guides/iOS and Mac/iCloud/hidemyemail.md": {
-	id: "Guides/iOS and Mac/iCloud/hidemyemail.md";
-  slug: "guides/ios-and-mac/icloud/hidemyemail";
+"Guides/iOS and Mac/Settings/Articles/fulldiskaccess.md": {
+	id: "Guides/iOS and Mac/Settings/Articles/fulldiskaccess.md";
+  slug: "guides/ios-and-mac/settings/articles/fulldiskaccess";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"Guides/iOS and Mac/Settings/index.mdx": {
+	id: "Guides/iOS and Mac/Settings/index.mdx";
+  slug: "guides/ios-and-mac/settings";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Guides/iOS and Mac/iCloud/Articles/hidemyemail.md": {
+	id: "Guides/iOS and Mac/iCloud/Articles/hidemyemail.md";
+  slug: "guides/ios-and-mac/icloud/articles/hidemyemail";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"Guides/iOS and Mac/iCloud/index.mdx": {
+	id: "Guides/iOS and Mac/iCloud/index.mdx";
+  slug: "guides/ios-and-mac/icloud";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "Guides/iOS and Mac/index.mdx": {
 	id: "Guides/iOS and Mac/index.mdx";
   slug: "guides/ios-and-mac";
@@ -180,6 +201,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
+"Reference/index.mdx": {
+	id: "Reference/index.mdx";
+  slug: "reference";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "index.mdx": {
 	id: "index.mdx";
   slug: "index";

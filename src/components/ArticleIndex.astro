@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+  collectionType: string;
+}
+
+const { docType } = Astro.props;
+
+const iosAndMac = await getCollection("docs", ({ id }) => {
+  return id.startsWith(`${docType}`);
+});
+---
+
+<ul>
+  {
+    iosAndMac.map(
+      (iosAndMacEntry) =>
+        !iosAndMacEntry.data.title.includes("Index") && (
+          <li>
+            <a href={`/${iosAndMacEntry.slug}`}>{iosAndMacEntry.data.title}</a>
+          </li>
+        ),
+    )
+  }
+</ul>
