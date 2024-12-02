@@ -152,16 +152,30 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
-"guides/example.md": {
-	id: "guides/example.md";
-  slug: "guides/example";
+"Guides/iOS and Mac/iCloud/hidemyemail.md": {
+	id: "Guides/iOS and Mac/iCloud/hidemyemail.md";
+  slug: "guides/ios-and-mac/icloud/hidemyemail";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".md"] };
-"guides/iOS and Mac/hidemyemail.md": {
-	id: "guides/iOS and Mac/hidemyemail.md";
-  slug: "guides/ios-and-mac/hidemyemail";
+"Guides/iOS and Mac/index.mdx": {
+	id: "Guides/iOS and Mac/index.mdx";
+  slug: "guides/ios-and-mac";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Guides/index.mdx": {
+	id: "Guides/index.mdx";
+  slug: "guides";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Reference/example.md": {
+	id: "Reference/example.md";
+  slug: "reference/example";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -173,13 +187,6 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"reference/example.md": {
-	id: "reference/example.md";
-  slug: "reference/example";
-  body: string;
-  collection: "docs";
-  data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
 };
 
 	};
