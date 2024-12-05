@@ -6,9 +6,6 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "HowTo.Technology",
-      social: {
-        github: "https://github.com/withastro/starlight",
-      },
     }),
   ],
 });
