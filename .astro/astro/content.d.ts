@@ -152,9 +152,30 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"docs": {
-"Guides/iOS and Mac/Settings/Articles/fulldiskaccess.md": {
-	id: "Guides/iOS and Mac/Settings/Articles/fulldiskaccess.md";
-  slug: "guides/ios-and-mac/settings/articles/fulldiskaccess";
+"Guides/Windows/index.mdx": {
+	id: "Guides/Windows/index.mdx";
+  slug: "guides/windows";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Guides/iOS and Mac/Security/Sophos Endpoint/captive-portal.md": {
+	id: "Guides/iOS and Mac/Security/Sophos Endpoint/captive-portal.md";
+  slug: "guides/ios-and-mac/security/sophos-endpoint/captive-portal";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".md"] };
+"Guides/iOS and Mac/Security/Sophos Endpoint/index.mdx": {
+	id: "Guides/iOS and Mac/Security/Sophos Endpoint/index.mdx";
+  slug: "guides/ios-and-mac/security/sophos-endpoint";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
+"Guides/iOS and Mac/Settings/Articles/full-disk-access.md": {
+	id: "Guides/iOS and Mac/Settings/Articles/full-disk-access.md";
+  slug: "guides/ios-and-mac/settings/articles/full-disk-access";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
@@ -166,9 +187,9 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"Guides/iOS and Mac/iCloud/Articles/hidemyemail.md": {
-	id: "Guides/iOS and Mac/iCloud/Articles/hidemyemail.md";
-  slug: "guides/ios-and-mac/icloud/articles/hidemyemail";
+"Guides/iOS and Mac/iCloud/Articles/hide-my-email.md": {
+	id: "Guides/iOS and Mac/iCloud/Articles/hide-my-email.md";
+  slug: "guides/ios-and-mac/icloud/articles/hide-my-email";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
