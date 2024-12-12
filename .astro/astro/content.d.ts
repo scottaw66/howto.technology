@@ -159,13 +159,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
-"Guides/iOS and Mac/Security/Sophos Endpoint/captive-portal.md": {
-	id: "Guides/iOS and Mac/Security/Sophos Endpoint/captive-portal.md";
+"Guides/iOS and Mac/Security/Sophos Endpoint/captive-portal.mdx": {
+	id: "Guides/iOS and Mac/Security/Sophos Endpoint/captive-portal.mdx";
   slug: "guides/ios-and-mac/security/sophos-endpoint/captive-portal";
   body: string;
   collection: "docs";
   data: InferEntrySchema<"docs">
-} & { render(): Render[".md"] };
+} & { render(): Render[".mdx"] };
 "Guides/iOS and Mac/Security/Sophos Endpoint/index.mdx": {
 	id: "Guides/iOS and Mac/Security/Sophos Endpoint/index.mdx";
   slug: "guides/ios-and-mac/security/sophos-endpoint";
