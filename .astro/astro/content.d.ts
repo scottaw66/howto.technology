@@ -173,6 +173,13 @@ declare module 'astro:content' {
   collection: "docs";
   data: InferEntrySchema<"docs">
 } & { render(): Render[".mdx"] };
+"Guides/iOS and Mac/Security/index.mdx": {
+	id: "Guides/iOS and Mac/Security/index.mdx";
+  slug: "guides/ios-and-mac/security";
+  body: string;
+  collection: "docs";
+  data: InferEntrySchema<"docs">
+} & { render(): Render[".mdx"] };
 "Guides/iOS and Mac/Settings/Articles/full-disk-access.md": {
 	id: "Guides/iOS and Mac/Settings/Articles/full-disk-access.md";
   slug: "guides/ios-and-mac/settings/articles/full-disk-access";
