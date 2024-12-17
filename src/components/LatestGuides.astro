@@ -1,0 +1,21 @@
+---
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { getCollection } from "astro:content";
+
+let allDocs = await getCollection("docs");
+allDocs = allDocs.sort(
+  (a, b) => new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf(),
+);
+
+const indexDocs = allDocs.slice(0, 6);
+---
+
+<CardGrid stagger>
+  {
+    indexDocs.map((doc) => (
+      <Card title={doc.data.title} icon="open-book">
+        <a href={`/${doc.slug}`}>{doc.data.title}</a> – {doc.data.description}
+      </Card>
+    ))
+  }
+</CardGrid>
