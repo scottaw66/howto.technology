@@ -12,10 +12,13 @@ const indexDocs = allDocs.slice(0, 6);
 
 <CardGrid stagger>
   {
-    indexDocs.map((doc) => (
-      <Card title={doc.data.title} icon="open-book">
-        <a href={`/${doc.slug}`}>{doc.data.title}</a> – {doc.data.description}
-      </Card>
-    ))
+    indexDocs
+      .filter((doc) => doc.id !== "index")
+      .map((doc) => (
+        <Card title={doc.data.title} icon="open-book">
+          <a href={`/${doc.id.replace("%20", "-")}`}>{doc.data.title}</a> –{" "}
+          {doc.data.description}
+        </Card>
+      ))
   }
 </CardGrid>

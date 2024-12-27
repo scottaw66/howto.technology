@@ -1,8 +1,9 @@
 ---
+import type { CollectionEntry } from "astro:content";
 import { getCollection } from "astro:content";
 
 interface Props {
-  collectionType: string;
+  docType: string;
 }
 
 const { docType } = Astro.props;
@@ -10,6 +11,7 @@ const { docType } = Astro.props;
 const iosAndMac = await getCollection("docs", ({ id }) => {
   return id.startsWith(`${docType}`);
 });
+//const iosAndMac = await getCollection("docs");
 ---
 
 <ul>
@@ -18,7 +20,7 @@ const iosAndMac = await getCollection("docs", ({ id }) => {
       (iosAndMacEntry) =>
         !iosAndMacEntry.data.title.includes("Index") && (
           <li>
-            <a href={`/${iosAndMacEntry.slug}`}>{iosAndMacEntry.data.title}</a>
+            <a href={`/${iosAndMacEntry.id}`}>{iosAndMacEntry.data.title}</a>
           </li>
         ),
     )
