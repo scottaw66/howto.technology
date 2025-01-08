@@ -1,18 +1,15 @@
 :root {
-  --sl-content-width: 70rem;
+  --sl-content-width: 60rem;
 }
 
 .content-panel {
-  font-size: 1.4rem;
-  line-height: 1.6;
-}
-
-.content-panel ol {
-  padding: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 
 img {
   max-width: 100%;
   height: auto;
   margin: 2rem auto;
+  border: 2px solid var(--sl-color-text);
 }
