@@ -1,0 +1,53 @@
+---
+title: Duo Universal Plugin for Wordpress
+description: "How to set up Duo Universal 2 Factor Authentication for Wordpress"
+---
+import { Steps } from "@astrojs/starlight/components";
+
+Duo Universal is a two-factor authentication plugin for Wordpress that adds an additional layer of security to your Wordpress site. This guide will walk you through the steps to set up Duo Universal to complete your Wordpress login.
+
+## Steps to set up Duo Universal for Wordpress Login
+
+<Steps>
+1. Download the Duo Mobile App for your phone from the [iOS App Store](https://apps.apple.com/us/app/duo-mobile/id422663827?mt=8) or [Google Play Store](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile&hl=en).
+2. Log in to your Wordpress admin dashboard as normal, with your Wordpress username and password. If you are presented with a message to update your browser, click "Skip for now".
+[![Update Browser](/images/ProcedureImages/UpdateChrome-F5EB194C-292D-4495-A9F2-B8A0119AEEA7.webp)](/images/ProcedureImages/UpdateChrome-F5EB194C-292D-4495-A9F2-B8A0119AEEA7.jpg)
+3. You will be presented with a "Welcome to Duo Security" screen. Click the "Get Started" button.
+[![Duo Security Plugin](/images/ProcedureImages/DuoGetStarted-120101EC-C7AB-49D4-8A76-3B47377B727D.webp)](/images/ProcedureImages/DuoGetStarted-120101EC-C7AB-49D4-8A76-3B47377B727D.jpg)
+4. You will be prompted to add a device. Choose the Duo Mobile option.
+[![Duo Mobile](/images/ProcedureImages/Duo2-F3703852-9B0A-460F-9C18-DFE5E80BFB51.webp)](/images/ProcedureImages/Duo2-F3703852-9B0A-460F-9C18-DFE5E80BFB51.jpg)
+5. You will be asked for your phone number. Give the number of the phone you installed the Duo Mobile app on.
+[![Phone Number](/images/ProcedureImages/Duo3-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo3-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+6. Verify that your phone number is correct and click "Yes, it's correct".
+[![Phone Number Verification](/images/ProcedureImages/Duo4-AF9EECD5-60FD-4987-B79F-068FDDBAE727.webp)](/images/ProcedureImages/Duo4-AF9EECD5-60FD-4987-B79F-068FDDBAE727.jpg)
+7. If Duo prompts to verify your number, click "Send a passcode". When the passcode arrives, enter it, and click "Verify".
+[![Send Passcode](/images/ProcedureImages/SendPasscode-09FF483A-0606-4331-B711-7D738EB34476.webp)](/images/ProcedureImages/SendPasscode-09FF483A-0606-4331-B711-7D738EB34476.jpg)
+[![Enter Passcode](/images/ProcedureImages/Duo5-AF9EECD5-60FD-4987-B79F-068FDDBAE727.webp)](/images/ProcedureImages/Duo5-AF9EECD5-60FD-4987-B79F-068FDDBAE727.jpg)
+8. You'll be prompted to download the mobile app. If you haven't done so already, do so now, then click "Next".
+[![Download Mobile App](/images/ProcedureImages/Duo6-F3703852-9B0A-460F-9C18-DFE5E80BFB51.webp)](/images/ProcedureImages/Duo6-F3703852-9B0A-460F-9C18-DFE5E80BFB51.jpg)
+9. You will be shown a QR code to scan in the Duo mobile app. Open the app on your phone.
+[![QR Code](/images/ProcedureImages/Duo9-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo9-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+10. In the mobile app, click the Add +" button to add a new account.
+[![Add Account](/images/ProcedureImages/Duo7-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo7-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+11. Tap "Use QR Code" on the next screen in the mobile app.
+[![Use QR Code](/images/ProcedureImages/Duo8-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo8-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+12. Point the phone camera at the screen and scan the QR code.
+13. Name the new account and tap "Save" in the mobile app.
+[![Save Account](/images/ProcedureImages/Duo12-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo12-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+14. Duo will show a confirmation that Duo was added. Click "Continue".
+[![Duo Added](/images/ProcedureImages/DuoAdded-A704E13B-BB33-4AF4-9AD1-EBC0F0248D48.webp)](/images/ProcedureImages/DuoAdded-A704E13B-BB33-4AF4-9AD1-EBC0F0248D48.jpg)
+15. Duo will prompt you to add a second device. You can add one of the options if one makes sense, or skip this.
+[![Add Second Device](/images/ProcedureImages/DuoAddOneMore-20DECA3A-39DF-4F3A-B7A5-F8D43729165E.webp)](/images/ProcedureImages/DuoAddOneMore-20DECA3A-39DF-4F3A-B7A5-F8D43729165E.jpg)
+16. You should see a confirmation screen on the Wordpress Duo plugin showing that setup is complete. Click "Log In with Duo". When asked choose "Duo Push" to receive a push notification to the Duo mobile app on your phone.
+[![Log In with Duo](/images/ProcedureImages/Duo13-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo13-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+17. If Duo shows you "Duo Push" as your login option, click on it. If Duo wants to log you in with an option other than "Duo Push", tap "Other Options". Then Tap "Duo Push".
+[![Other Options](/images/ProcedureImages/Duo14-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo14-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+18. The Wordpress Duo plugin will show you a code to enter in the mobile app. Enter it in the mobile app and click "Verify".
+[![Enter Code](/images/ProcedureImages/Duo10-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo10-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+[![Verify Code](/images/ProcedureImages/Duo11-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo11-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+19. Once you successfully login with Duo, you'll be asked if this is your device. Click "Yes, this is my device" to avoid having to use Duo every time you log in.
+[![Remember Device](/images/ProcedureImages/Duo15-5041301C-86B2-4713-B39A-5472DB68DEF8.webp)](/images/ProcedureImages/Duo15-5041301C-86B2-4713-B39A-5472DB68DEF8.jpg)
+20. On future logins, when you choose "Duo Push" you'll be asked to confirm on the mobile app by tapping a green checkmark instead of a entering a code.
+[![Duo Push](/images/ProcedureImages/DuoCheckForPush-0D01471D-456A-4C6E-8599-10391291ECA4.webp)](/images/ProcedureImages/DuoCheckForPush-0D01471D-456A-4C6E-8599-10391291ECA4.jpg)
+[![Duo Push Mobile](/images/ProcedureImages/DuoVerifyPush-7530BC06-2BCB-4303-B29B-3B62092223C5.webp)](/images/ProcedureImages/DuoVerifyPush-7530BC06-2BCB-4303-B29B-3B62092223C5.jpg)
+</Steps>
